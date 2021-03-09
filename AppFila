@@ -1,0 +1,25 @@
+public static void main(String[] args) {
+        Fila f = new Fila(6);
+
+        try {
+
+            f.enfileira(1);
+            f.enfileira(2);
+            f.enfileira(3);
+            f.enfileira(4);
+                        
+            f.desenfileira();
+            f.enfileira(5);
+            f.furaFila(6);
+
+            while (!f.estaVazia()){
+                int n = f.desenfileira();
+                System.out.println(n);
+            }
+
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+    }
+
+}
