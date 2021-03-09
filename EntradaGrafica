@@ -1,0 +1,23 @@
+public static void main(String[] args) {
+       
+        String texto1, texto2, texto3, texto4;
+        int i;
+        double d;
+        
+        texto1 = JOptionPane.showInputDialog (null, "Digite um número inteiro:");
+        texto2 = JOptionPane.showInputDialog (null, "Digite um número inteiro:");
+        texto3 = JOptionPane.showInputDialog (null, "Digite um número inteiro:");
+        texto4 = JOptionPane.showInputDialog (null, "Digite um número inteiro:");
+        
+        do{            
+            i = Integer.parseInt(texto1);
+            JOptionPane.showMessageDialog (null, "O valor convertido é " + i);
+        }while(i==0);{ 
+            
+    }   
+        
+        
+        JOptionPane.showMessageDialog (null, "O valor convertido é " + i);
+    }
+    
+}
