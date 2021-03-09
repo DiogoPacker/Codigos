@@ -1,0 +1,17 @@
+public static void main(String[] args) {
+        java.util.Scanner scan = new java.util.Scanner(System.in);
+        
+        String nome;
+        Double salarioF, salario, TotalV;
+        
+        nome = new String();
+        nome = scan.nextLine();
+        salario = scan.nextDouble();
+        TotalV = scan.nextDouble();
+        salarioF = salario + (TotalV*0.15);
+        
+        System.out.printf("TOTAL = R$ %.2f%n", salarioF);
+        
+    }
+    
+}
