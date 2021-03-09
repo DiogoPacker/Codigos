@@ -1,0 +1,53 @@
+public static void main(String[] args) {
+        Scanner es = new Scanner(System.in);
+        int opcao = 9;
+        
+        while (opcao !=0) {
+            System.out.print("Escolha 1 para Futebol, 2 para Basquete ou 0 para sair:");
+            opcao = es.nextInt();
+            
+            if (opcao == 1) {
+                Futebol ft = new Futebol();
+                
+                System.out.println("\n Coloque os dados do seu time de coração");
+                                
+                    System.out.print("Digite o país:");
+                    ft.pais = es.next();
+                
+                    System.out.print("Digite o nome do time:");
+                    ft.time = es.next();
+                                   
+                    System.out.print("Quantos titulos nacionais:");
+                    ft.titulosNacionais = es.nextDouble();
+                
+                    System.out.print("Quantos titulos internacionais:");
+                    ft.titulosInternacionais = es.nextDouble();
+        
+                    System.out.print("Digite o maior rival:");
+                    ft.rival = es.next();
+                                     
+                }       
+            
+                if (opcao == 2) {
+                    Basquete bq = new Basquete();
+                
+                    System.out.println("\n Coloque os dados da sua equipe de coração");
+                
+                    System.out.print("Digite o país:");
+                    bq.pais = es.next();
+                    
+                    System.out.print("Digite o nome da equipe:");
+                    bq.equipe = es.next();   
+                    
+                    System.out.print("Quantos titulos nacionais:");
+                    bq.titulosNacionais = es.nextDouble();
+                        
+                    System.out.print("Digite o maior rival:");
+                    bq.rival = es.next();
+                    
+                    System.out.print("Qual o nome da arena:");
+                    bq.arena = es.next();
+            }    
+        }
+    }
+}
