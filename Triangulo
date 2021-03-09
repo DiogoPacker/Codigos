@@ -1,0 +1,19 @@
+java.util.Scanner scan =  new java.util.Scanner(System.in);
+        double a, b ,c, aux;
+        System.out.println("Digite os 3 lados");
+        a = scan.nextDouble();
+        b = scan.nextDouble();
+        c = scan.nextDouble();   
+        // vamos fazer com que o a seja o maior
+         if ( b > a && b > c ) {
+        aux = a; a = b; b = aux;  
+      } else if ( c > a && c > b ) {
+          aux = a; a = c; c = aux;                            
+        } 
+        if ( a < b + c ) {
+            System.out.println("Formam um triângulo");
+        } else {
+                System.out.println("Não formam um triângulo");
+                }
+         }
+}
