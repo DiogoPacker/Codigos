@@ -1,0 +1,21 @@
+public static void main(String[] args) {
+        java.util.Scanner scan = new java.util.Scanner(System.in);
+        double A, B, C, DELTA, R1, R2;
+        A = scan.nextDouble();
+        B = scan.nextDouble();
+        C = scan.nextDouble();
+        DELTA = (B*B)-(4*A*C);
+        if (DELTA < 0 || (2*A) == 0) {
+            System.out.println("Impossivel calcular");
+        }
+        else { 
+           R1 = (-B+Math.sqrt(DELTA))/(2*A);
+           R2 = (-B-Math.sqrt(DELTA))/(2*A);
+            System.out.printf("R1 = %.5f%n", R1);
+            System.out.printf("R2 = %.5f%n", R2);
+            
+        }
+        
+    }
+    
+}
